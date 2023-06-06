@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My App</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-color-primary text-color-white tracking-wider">
+    <header>
+        <nav class="container flex justify-between items-center">
+            <div class="py-5 text-color-secondary font-bold text-3xl">
+                <a href="#home">
+                    <span class="text-color-white">Solo</span>Mon.
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6">
+                    <li><a href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a href="#features" class="hover:text-color-secondary ease-in duration-200">features</a></li>
+                    <li><a href="#testimonial" class="hover:text-color-secondary ease-in duration-200">testimonial</a></li>
+                    <li><a href="#pricing" class="hover:text-color-secondary ease-in duration-200">pricing</a></li>
+                    <li><a href="#blog" class="hover:text-color-secondary ease-in duration-200">blog</a></li>
+                    <li><a href="#contact" class="hover:text-color-secondary ease-in duration-200">contact</a></li>
+                    <li><button class="btn">free trial</button></li>
+                </ul>
+            </div>
+
+            <!-- mobile screen -->
+            <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+            <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0 ">
+                <ul class="h-full grid place-items-center py-20">
+                    <li><a id="hLink" href="" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a id="hLink" href="" class="hover:text-color-secondary ease-in duration-200">features</a></li>
+                    <li><a id="hLink" href="#testimonial" class="hover:text-color-secondary ease-in duration-200">testimonial</a></li>
+                    <li><a id="hLink" href="#pricing" class="hover:text-color-secondary ease-in duration-200">pricing</a></li>
+                    <li><a id="hLink" href="#blog" class="hover:text-color-secondary ease-in duration-200">blog</a></li>
+                    <li><a id="hLink" href="#contact" class="hover:text-color-secondary ease-in duration-200">contact</a></li>
+                    <li><button class="btn">free trial</button></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="relative">
+            <div class="blob1"></div>
+            <div class="blob2"></div>
+            <div class="container py-20">
+                <div class="flex flex-col items-center z-20 md:flex-row ">
+                    <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10   ">
+                        <h1 class="title">Awesome Application for solomon</h1>
+                        <p class="leading-relaxed mb-10">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Id velit iure facilis alias iusto mollitia dignissimos 
+                            maxime architecto eligendi soluta molestias tempora nisi 
+                            non eius deserunt, at quas saepe placeat?
+                        </p>
+                        <button class="btn">
+                            Download App 
+                        </button>
+                    </div>
+
+                    <div class="md:w-1/2">
+                        <img src="./img/app.png" alt="app">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="bg-color-primary-light">
+            <div class="container py-20">
+                
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">Our Future</h4>
+                    <h1 class="title">Easy to Manage Your Apps</h1>
+                </div>
+
+            </div>
+
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 
+                px-4 sm:px-6 lg:px-8">
+                <!-- card no  --> 
+                <div class="border-2 border-solid border-color-gray text-center py-20 px-5  
+                    rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                    
+                    <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6 ">
+                        <i class="fa-solid fa-calendar-days text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold py-4">Expense Tracking</h3>
+                    <p class="leading-relaxed">
+                        Lorem, ipsum dolor sit amet consectetur 
+                        adipisicing elit. Obcaecati ex pariatur 
+                        provident magni soluta eum
+                    </p>
+                </div>
+
+                <div class="border-2 border-solid border-color-gray text-center py-20 px-5  
+                    rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                    
+                    <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6 ">
+                        <i class="fa-solid fa-calendar-days text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold py-4">Expense Tracking</h3>
+                    <p class="leading-relaxed">
+                        Lorem, ipsum dolor sit amet consectetur 
+                        adipisicing elit. Obcaecati ex pariatur 
+                        provident magni soluta eum
+                    </p>
+                </div>
+                
+                <div class="border-2 border-solid border-color-gray text-center py-20 px-5  
+                    rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                    
+                    <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6 ">
+                        <i class="fa-solid fa-calendar-days text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold py-4">Expense Tracking</h3>
+                    <p class="leading-relaxed">
+                        Lorem, ipsum dolor sit amet consectetur 
+                        adipisicing elit. Obcaecati ex pariatur 
+                        provident magni soluta eum
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        
+        <section id="saving-money">
+            <div class="container py-20 relative">
+                <div class="blob1"></div>
+                <div class="blob2"></div>
+
+                <div class="flex flex-col items-center justify-between md:flex-row">
+                    <div class="mb-12 md:w-1/2">
+                        <img src="./img/app.png" alt="hero">
+                    </div>
+
+                    <div class="text-center md:text-left md:w-1/2 md:ml-20">
+                        <h4 class="font-bold text-color-secondary mb-4">Our Future</h4>
+                        <h1 class="title mb-4">Easy to Manage Your Apps</h1>
+                        <p class="leading-relaxed mb-10">
+                            Lorem, ipsum dolor sit amet consectetur 
+                            adipisicing elit. Obcaecati ex pariatur 
+                            provident magni soluta eum
+                        </p>
+                        <button class="btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works bg-color-primary-light">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">Our Future</h4>
+                    <h1 class="title">Grow Every Day</h1>
+                </div>
+                <div class="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+                    <!-- card  1-->
+                    <div class="text-center cursor-pointer">
+                        <div class="relative bg-color-primary-dark inline-block px-6 py-3
+                            rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200">
+
+                            <p class="text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('/img/line.png')] 
+                            lg:after:absolute lg:after:top-4 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat
+                            lg:after:h-7 lg:after:w-52">1</p>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Install</h3>
+                        <p class="leading-relaxed">
+                            We use the application in doing wonderful stuffs
+                        </p>
+                    </div>
+
+                    <!-- card  2-->
+                    <div class="text-center cursor-pointer">
+                        <div class="relative  bg-color-secondary inline-block px-6 py-3
+                            rounded-lg cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                            <p class="text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('/img/line.png')] 
+                            lg:after:absolute lg:after:top-4 lg:after:left-32 8xl:after:left-52 lg:after:bg-no-repeat
+                            lg:after:h-7 lg:after:w-52">2</p>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Install</h3>
+                        <p class="leading-relaxed">
+                            We use the application in doing wonderful stuffs
+                        </p>
+                    </div>
+
+                    <!-- card  3-->
+                    <div class="text-center cursor-pointer">
+                        <div class="relative bg-color-primary-dark inline-block px-6 py-3
+                            rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200">
+                            <p class="text-6xl">3</p>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Install</h3>
+                        <p class="leading-relaxed">
+                            We use the application in doing wonderful stuffs
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonial">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">User Review</h4>
+                    <h1 class="title">What Our clients are saying</h1>
+                </div>
+
+                <div class="mt-8">
+                    <div class="flex items-center justify-center flex-wrap">
+                        <img src="img/u1.png" alt="alt" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic active-pic" onclick="showReview()">
+                        <img src="img/u2.png" alt="alt" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic " onclick="showReview()">
+                        <img src="img/u3.png" alt="alt" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic "  onclick="showReview()">
+                        <img src="img/u4.png" alt="alt" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic "  onclick="showReview()">
+                    </div>
+
+                    <div class="grid place-items text-center m-auto md:w-4/5 min-h-[40vh]">
+                        <div class="user-text active-text">
+                            <p class="md:text-2xl mb-6">
+                                "This should be used to tell a story and include any testimonial you might have about us."
+                            </p>
+                            <h4 class="font-bold text-color-secondary mb-1">Mark Nesus</h4>
+                            <p>IOS Developer</p>
+                        </div>
+                        <div class="user-text">
+                            <p class="md:text-2xl mb-6">
+                                "This should be used to tell a story and include any testimonial you might have about us."
+                            </p>
+                            <h4 class="font-bold text-color-secondary mb-1">Cilla Hn</h4>
+                            <p>IOS Developer</p>
+                        </div>
+                        <div class="user-text">
+                            <p class="md:text-2xl mb-6">
+                                "This should be used to tell a story and include any testimonial you might have about us."
+                            </p>
+                            <h4 class="font-bold text-color-secondary mb-1">Kelly Jin</h4>
+                            <p>IOS Developer</p>
+                        </div><div class="user-text">
+                            <p class="md:text-2xl mb-6">
+                                "This should be used to tell a story and include any testimonial you might have about us."
+                            </p>
+                            <h4 class="font-bold text-color-secondary mb-1">Cole Andawe</h4>
+                            <p>IOS Developer</p>
+                        </div>
+
+                        
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- pricing -->
+
+        <!-- blog -->
+        <section id="blog">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">Innovation</h4>
+                    <h1 class="title">Latet Updates</h1>
+                </div>
+
+                <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- card 1  -->
+                    <div>
+                        <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                            <img src="./img/app.png" alt="" class="lg:h-full w-full 
+                            hover:scale-125 transition duration-300 ease-in-out">
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-5 py-5">
+                                <p>20 August 2023</p>
+                                <p>1 min Read</p>
+                            </div>
+    
+                            <a href="#" class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline">
+                                fOUR WAYS TO BE RICH
+                            </a>
+    
+                            <p class="leading-relaxed my-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio soluta veritatis amet reprehenderit facilis ex alias velit, vitae mollitia architecto minus, earum corrupti, accusamus doloremque officia temporibus exercitationem dolore.
+                            </p>
+                            
+    
+                        </div>
+                    </div>
+
+                    <!-- card 1  -->
+                    <div>
+                        <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                            <img src="./img/app.png" alt="" class="lg:h-full w-full 
+                            hover:scale-125 transition duration-300 ease-in-out">
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-5 py-5">
+                                <p>20 August 2023</p>
+                                <p>1 min Read</p>
+                            </div>
+    
+                            <a href="#" class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline">
+                                fOUR WAYS TO BE RICH
+                            </a>
+    
+                            <p class="leading-relaxed my-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio soluta veritatis amet reprehenderit facilis ex alias velit, vitae mollitia architecto minus, earum corrupti, accusamus doloremque officia temporibus exercitationem dolore.
+                            </p>
+                            
+    
+                        </div>
+                    </div>
+
+                    <!-- card 1  -->
+                    <div>
+                        <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                            <img src="./img/app.png" alt="" class="lg:h-full w-full 
+                            hover:scale-125 transition duration-300 ease-in-out">
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-5 py-5">
+                                <p>20 August 2023</p>
+                                <p>1 min Read</p>
+                            </div>
+    
+                            <a href="#" class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline">
+                                fOUR WAYS TO BE RICH
+                            </a>
+    
+                            <p class="leading-relaxed my-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio soluta veritatis amet reprehenderit facilis ex alias velit, vitae mollitia architecto minus, earum corrupti, accusamus doloremque officia temporibus exercitationem dolore.
+                            </p>
+                            
+    
+                        </div>
+                    </div>
+
+                    <!-- card 1  -->
+                    <div>
+                        <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                            <img src="./img/app.png" alt="" class="lg:h-full w-full 
+                            hover:scale-125 transition duration-300 ease-in-out">
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-5 py-5">
+                                <p>20 August 2023</p>
+                                <p>1 min Read</p>
+                            </div>
+    
+                            <a href="#" class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline">
+                                fOUR WAYS TO BE RICH
+                            </a>
+    
+                            <p class="leading-relaxed my-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio soluta veritatis amet reprehenderit facilis ex alias velit, vitae mollitia architecto minus, earum corrupti, accusamus doloremque officia temporibus exercitationem dolore.
+                            </p>
+                            
+    
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">Have a question</h4>
+                    <h1 class="title">Get in Touch</h1>
+                </div>
+            </div>
+
+            <form action="">
+                <div class="w-full m-auto text-center md:w-2/3">
+                    <div class="text-color-primary-dark grid gap-6 mb-6 md:grid-cols-2">
+                        <input type="text" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 
+                            focus:outline-none focus:border-color-secondary" placeholder="Name">
+                            
+                        <input type="text" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 
+                            focus:outline-none focus:border-color-secondary" placeholder="Email">
+                            
+                        <input type="text" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 
+                        focus:outline-none focus:border-color-secondary" placeholder="Phone">
+                        
+                        <input type="text" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 
+                            focus:outline-none focus:border-color-secondary" placeholder="Company">
+
+                    </div>
+
+                    <textarea rows="4" class=" text-color-primary-dark  bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 
+                    focus:outline-none focus:border-color-secondary" placeholder="Message"></textarea>
+
+                    <button class="btn mt-10">Send Message</button>
+
+                </div>
+            </form>
+
+
+        </section>
+
+    </main>
+
+    <script>
+        //mobile menu
+        const hamburger = document.querySelector("#hamburger");
+        const menu = document.querySelector("#menu");
+        const hLink = document.querySelectorAll("#hLink");
+        const faSolid = document.querySelector(".fa-solid");
+
+        hamburger.addEventListener("click", ()=>{
+            // menu.classList.remove('hidden');
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark');
+        })
+
+        hLink.forEach(link => {
+            link.addEventListener('click', ()=>{
+                menu.classList.toggle('hidden');
+                faSolid.classList.toggle('fa-xmark');
+            })
+        })
+
+        //testimonial
+
+        const userTexts = document.getElementsByClassName('user-text'); 
+        const userPics = document.getElementsByClassName('user-pic'); 
+        
+        function showReview(){
+            for(userPic of userPics){
+                userPic.classList.remove("active-pic");
+            }
+            for(userText of userTexts){
+                userText.classList.remove("active-text");
+            }
+
+            let i = Array.from(userPics).indexOf(event.target);
+
+            userPics[i].classList.add("active-pic");
+            userTexts[i].classList.add("active-text");
+
+
+        }
+
+    </script>
+</body>
+</html>
